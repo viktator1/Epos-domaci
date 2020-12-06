@@ -1,0 +1,118 @@
+body,
+html {
+    background-color: coral;
+    margin: 0;
+    height: 100%;
+}
+
+
+
+header {
+    display: flex;
+    background-color: darkgray;
+    justify-content: flex-end;
+    height: 10%;
+    width: 100%;
+    margin-top: 0;
+}
+
+
+.glavni {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#identifikator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: deeppink;
+    text-align: center;
+    width: 10%;
+}
+
+#izvuceni-brojevi {
+    background-color: white;
+    width: 50%;
+    margin: 10px;
+    border: 3px solid black;
+    font-size: 20px;
+}
+
+#izvlacenje-broja {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 3px solid black;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.levo {
+    left: 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.desno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    width: 30%;
+
+}
+
+
+.brojevi {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.broj {
+    background-color: white;
+    text-align: center;
+    height: 20px;
+    width: 25px;
+    margin: 5px;
+    transition: 1s;
+}
+
+.izvucen {
+
+    animation-name: animacija;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    background-color: yellow;
+}
+
+.izbor-brojeva {
+    height: 30%;
+    width: 100%;
+    background-color: white;
+    z-index: -1;
+
+
+}
+
+.polja-za-dugmice {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+@keyframes animacija {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
