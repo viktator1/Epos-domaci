@@ -56,6 +56,29 @@ function resetuj(){
         document.getElementById(i).classList.remove("izvucen");
     }
 }
+function potvrdi(){
+    let brojKombinacija=document.getElementById("izborBrojeva").value;
+    let prozorZaIzborBrojeva=document.getElementById("prozor-za-izbor-brojeva");
+
+    for(let i=0;i<brojKombinacija;i++){
+        let div=document.createElement("DIV");
+        let node=document.createElement("P");
+        let text=document.createTextNode((i+1)+":");
+        node.appendChild(text);
+        let input=document.createElement("INPUT");
+        //style
+        node.style.width="10%";
+        node.style.margin="0";
+        div.style.display="flex";
+        input.classList.add("broj-za-uplatu"+(i+1));
+
+        div.appendChild(node);
+        div.appendChild(input)
+        prozorZaIzborBrojeva.appendChild(div);
+        
+    }
+
+}
 
 
 

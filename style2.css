@@ -110,9 +110,11 @@ header {
 @keyframes animacija {
     from {
         background-color: red;
+
     }
 
     to {
         background-color: yellow;
+
     }
 }
