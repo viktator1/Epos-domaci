@@ -11,7 +11,7 @@ header {
     display: flex;
     background-color: darkgray;
     justify-content: flex-end;
-    height: 10%;
+    max-height: 20%;
     width: 100%;
     margin-top: 0;
 }
@@ -27,9 +27,18 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+
+    /* display: flex;
+    flex-wrap: wrap; */
     background-color: deeppink;
     text-align: center;
-    width: 10%;
+    min-width: 10%;
+    max-width: 30%;
+
+}
+
+#identifikator p {
+    margin: 3px;
 }
 
 #izvuceni-brojevi {
@@ -71,7 +80,7 @@ header {
 .brojevi {
     display: flex;
     flex-wrap: wrap;
-
+    margin-bottom: 50px;
 }
 
 .broj {
@@ -92,7 +101,7 @@ header {
 }
 
 .izbor-brojeva {
-    height: 30%;
+    min-height: 30%;
     width: 100%;
     background-color: white;
     z-index: -1;
