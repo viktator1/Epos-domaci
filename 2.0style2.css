@@ -1,0 +1,146 @@
+body,
+html {
+    background-color: cornflowerblue;
+    margin: 0;
+    height: 100%;
+}
+
+
+
+header {
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: flex-end;
+    max-height: 20%;
+    width: 100%;
+    margin-top: 0;
+}
+
+
+.glavni {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#identifikator {
+    display: grid;
+    text-transform: capitalize;
+    font-weight: bold;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    /* display: flex;
+    flex-wrap: wrap; */
+    background-color: crimson;
+    text-align: left;
+    justify-content: left;
+    min-width: 10%;
+    max-width: 30%;
+
+}
+
+#identifikator p {
+    margin: 3px;
+}
+
+#izvuceni-brojevi {
+    background-color: whitesmoke;
+    width: 60%;
+    margin: 10px;
+    border: 3px black solid;
+    font-size: 20px;
+}
+
+#izvlacenje-broja {
+    width: 80px;
+    height: 80px;
+    margin:25px;
+    background-color: whitesmoke;
+    border: 3px solid black;
+    text-align: center;
+    font-size: 60px;
+}
+
+
+.levo {
+    left: 0;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.desno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    width: 40%;
+
+}
+
+
+.brojevi {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.broj {
+    background-color: whitesmoke;
+    font-weight: bolder;
+    border-radius: 45px;
+    padding: 10px;
+    text-align: center;
+    height: 20px;
+    width: 25px;
+    margin: 5px;
+    transition: 1s;
+}
+
+.izvucen {
+    animation-name: animacija;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    background-color: yellow;
+}
+
+#uplatii{
+   background-color: green;
+   padding: 10px;
+}
+#pokreni{
+    background-color: crimson;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.izbor-brojeva {
+    min-height: 30%;
+    width: 100%;
+    margin-top: 10px;
+    border: green solid;
+    background-color:whitesmoke;
+    z-index: -1;
+}
+
+.polja-za-dugmice {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+
+
+@keyframes animacija {
+    from {
+        background-color:crimson;
+
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
