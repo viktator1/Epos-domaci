@@ -9,7 +9,7 @@
     align-items: center;
     background-color: cornflowerblue;
     color: white;
-    width: 80%;
+    width: 100%;
     /* max-width: 90%;
     min-width: 70%; */
 }
@@ -119,12 +119,14 @@ html {
 }
 
 #identifikator {
+    position: relative;
+    left: 80%;
     display: grid;
     text-transform: capitalize;
     font-weight: bold;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-
+    margin: 3px;
     /* display: flex;
     flex-wrap: wrap; */
     background-color: crimson;
@@ -133,7 +135,7 @@ html {
     /* min-width: 10%;
     max-width: 30%; */
     width: 20%;
-    height: 100%;
+
 
 }
 
