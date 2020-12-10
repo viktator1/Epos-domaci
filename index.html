@@ -4,15 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <form action="kino.html">
-        <div class="unos-teksta">
-        <p>Unesit ime</p><input type="text" id="ime"><br>
-        <button type="submit" onclick="prenosImena()">Potvrdi</button>
+    <nav class = "zaglavlje">
+        <div class = "ime-projekta">Grcki kino</div>
+        <a href="#" class ="dugme-meni">
+            <span class ="crta"></span>
+            <span class ="crta"></span>
+            <span class ="crta"></span>
+        </a>
+        <div class = "linkovi-zaglavlje">
+            <ul>
+                <li><a href="index.html">Pocetna</a></li>
+                <li><a href="kino.html">Moj broj</a></li>
+                <li><a href="pravilaIgre.html">Pravila igre</a></li>
+                <li><a href="#">Jos jedna</a></li>
+            </ul>
         </div>
-    </form>
+    </nav>
+
+    
+    <div class = "kontejner">
+        <div class = "kutija">
+            <h1>Dobrodosli u svet brojeva!</h1>
+        </div>
+        <form action="kino.html">
+            <div class="unos-teksta">
+                <h2>Prvi korak</h2>
+                <hr><hr>
+            <p>Za pocetak, unesite podatke:</p><input type="text" id="ime" placeholder="Ime" size="30"><br>
+            <button type="submit" onclick="prenosImena()">Potvrdi</button>
+            </div>
+        </form>
+    </div>
+    <footer>kladjenje je zabranjeno za mladje od 18</footer>
+    
 
 <script src="script1.js"></script>
 </body>

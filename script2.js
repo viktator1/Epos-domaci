@@ -18,6 +18,8 @@ function podesiKredit(){
 }
 
 async function izvlacenje(){
+    let dugmeZaIzvlacenje=document.getElementById("pokreni");
+    dugmeZaIzvlacenje.disabled=true;
     resetuj();
     let brojac=0;
     let polje=document.getElementById("izvlacenje-broja");
@@ -47,7 +49,7 @@ async function izvlacenje(){
     proveraIzvucenihBrojeva();
     napraviDivZaIzvuceneBrojeve();
     postojiUplata=false;
-
+    dugmeZaIzvlacenje.disabled=false;
 
 }
 
@@ -136,7 +138,7 @@ function potvrdi(){
     //polje za uplatu
     let div=document.createElement("DIV");
     let node=document.createElement("P");
-    let text=document.createTextNode("Iznos uplate");
+    let text=document.createTextNode("Iznos uplate:");
     let input=document.createElement("INPUT");
     input.id="iznosUplate";
     node.appendChild(text);
@@ -195,7 +197,7 @@ function napraviDivZaBrojeve(){
     let div=document.createElement("DIV");
     div.style.display="flex";
     div.style.flexWrap="wrap";
-    div.style.backgroundColor="orange";
+    div.style.backgroundColor="blue";
     div.style.width="100%";
     div.style.margin="3px";
     div.style.justifyContent="center";
@@ -206,7 +208,7 @@ function napraviDivZaBrojeve(){
         kuglica.style.width="25px";
         kuglica.style.height="25px";
         kuglica.style.borderRadius="50px";
-        kuglica.style.backgroundColor="red";
+        kuglica.style.backgroundColor="crimson";
         kuglica.style.margin="3px";
         kuglica.style.textAlign="center";
         div.appendChild(kuglica);
@@ -221,7 +223,7 @@ function napraviDivZaIzvuceneBrojeve(){
     let div=document.createElement("div");
     div.style.display="flex";
     div.style.flexWrap="wrap";
-    div.style.backgroundColor="orange";
+    div.style.backgroundColor="blue";
     div.style.width="100%";
     div.style.margin="3px";
     div.style.justifyContent="center";
@@ -233,7 +235,7 @@ function napraviDivZaIzvuceneBrojeve(){
         kuglica.style.width="25px";
         kuglica.style.height="25px";
         kuglica.style.borderRadius="50px";
-        kuglica.style.backgroundColor="red";
+        kuglica.style.backgroundColor="crimson";
         kuglica.style.margin="3px";
         kuglica.style.textAlign="center";
         div.appendChild(kuglica);
@@ -241,6 +243,13 @@ function napraviDivZaIzvuceneBrojeve(){
     let pom=document.getElementsByClassName("levo");
     pom[0].appendChild(div);
 }
+
+const dugme = document.getElementsByClassName("dugme-meni")[0]
+const linkovi = document.getElementsByClassName("linkovi-zaglavlje")[0]
+
+dugme.addEventListener('click', () =>{
+    linkovi.classList.toggle('active')
+})
 
 window.onload=podesiKredit();
 window.onload=funkcija2();

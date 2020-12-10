@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+.zaglavlje {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.ime-projekta {
+    font-size: 5rem;
+    margin: 1%;
+}
+
+.linkovi-zaglavlje ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 2rem;
+}
+
+.linkovi-zaglavlje li {
+    list-style: none;
+}
+
+.linkovi-zaglavlje li a {
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+    display: block;
+}
+
+.linkovi-zaglavlje li:hover {
+    background-color: darkgray;
+}
+
+.dugme-meni {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60px;
+    height: 40px;
+}
+
+.dugme-meni .crta {
+    height: 8px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media(max-width: 1150px) {
+    .dugme-meni {
+        display: flex;
+    }
+
+    .linkovi-zaglavlje {
+        display: none;
+        width: 100%;
+    }
+
+    .zaglavlje {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .linkovi-zaglavlje ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .linkovi-zaglavlje li {
+        text-align: center;
+    }
+
+    .linkovi-zaglavlje li a {
+        padding: .5rem 1rem;
+    }
+
+    .linkovi-zaglavlje.active {
+        display: flex;
+    }
+
+}
+
+
+@media(max-width: 1000px) {
+    .kontejner {
+        flex-wrap: wrap;
+    }
+}
+
+.kontejner {
+    width: 700px;
+    display: flex;
+    margin-top: 120px;
+
+}
+
+.kutija {
+    background-color: black;
+    padding: 20px;
+    color: white;
+    border: 5px crimson solid;
+
+}
+
+.kutija h1 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 0.2em;
+    font-size: 500%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.unos-teksta {
+    border: 2px black solid;
+    padding: 20px;
+    text-align: center;
+}
+
+input {
+    align-content: center;
+    height: 35px;
+}
+
+button {
+    background-color: crimson;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.unos-teksta h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+div p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: yellow;
+    color: red;
+    text-align: center;
+}
