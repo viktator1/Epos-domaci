@@ -244,13 +244,15 @@ function napraviDivZaIzvuceneBrojeve(){
     pom[0].appendChild(div);
 }
 
-const dugme = document.getElementsByClassName("dugme-meni")[0]
-const linkovi = document.getElementsByClassName("linkovi-zaglavlje")[0]
+function funkcija3(){
+    const dugme = document.getElementsByClassName("dugme-meni")[0]
+    const linkovi = document.getElementsByClassName("linkovi-zaglavlje")[0]
 
-dugme.addEventListener('click', () =>{
-    linkovi.classList.toggle('active')
-})
+    dugme.addEventListener('click', () =>{
+        linkovi.classList.toggle('active')
+    })
+}
 
 window.onload=podesiKredit();
 window.onload=funkcija2();
-
+window.onload=funkcija3();

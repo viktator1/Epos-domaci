@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
+   
     <nav class = "zaglavlje">
         <div class = "ime-projekta">Grcki kino</div>
         <a href="#" class ="dugme-meni">
@@ -18,27 +20,36 @@
             <ul>
                 <li><a href="index.html">Pocetna</a></li>
                 <li><a href="kino.html">Moj broj</a></li>
-                <li><a href="pravilaIgre.html">Pravila igre</a></li>
-                <li><a href="#">Jos jedna</a></li>
+                <li><a href="pravila.html">Pravila igre</a></li>
+                <li><a href="uplata.html">Uplata</a></li>
             </ul>
         </div>
     </nav>
-
+   
     
-    <div class = "kontejner">
-        <div class = "kutija">
-            <h1>Dobrodosli u svet brojeva!</h1>
+	<div class = "spojeno">
+		
+			<div class = "slika"> 
+			<img src="https://images-na.ssl-images-amazon.com/images/I/81BfNpN5mLL.png">
+		</div>
+		<div class = "kontejner">
+		
+		
+
+			
+			<form action="kino.html">
+				<div class="unos-teksta">
+					<h2>Prvi korak</h2>
+					<hr><hr>
+				<p>Za pocetak, unesite podatke:</p><input type="text" id="ime" placeholder="Ime" size="30"><br>
+				<button type="submit" onclick="prenosImena()">Potvrdi</button>
+				</div>
+			</form>
         </div>
-        <form action="kino.html">
-            <div class="unos-teksta">
-                <h2>Prvi korak</h2>
-                <hr><hr>
-            <p>Za pocetak, unesite podatke:</p><input type="text" id="ime" placeholder="Ime" size="30"><br>
-            <button type="submit" onclick="prenosImena()">Potvrdi</button>
-            </div>
-        </form>
-    </div>
-    <footer>Kladjenje je zabranjeno za mladje od 18.</footer>
+	</div>
+    <div class = "baner">18+ <b>|</b> Kladjenje zabranjeno za osobe ispod 18 godina.</div>
+	
+    
     
 
 <script src="script1.js"></script>
