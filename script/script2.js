@@ -7,7 +7,7 @@ let uplaceniBrojevi=[];
 let iznosUplate=0;
 let postojiUplata=false;
 
-function funkcija2(){
+function podesavanjeImena(){
     let prenosImena=document.getElementById("prenos-imena");
     prenosImena.innerHTML= localStorage.getItem("ime");
 }
@@ -109,10 +109,7 @@ function potvrdi(){
     brojKombinacija=document.getElementById("izborBrojeva").value;
     let prozorZaKombinacije=document.getElementById("prozor-za-izbor-brojeva");
 
-    /*uklanjanje polja za izbor brojeva (ukoliko postoje)
-    while(prozorZaKombinacije.hasChildNodes()){
-        prozorZaKombinacije.removeChild(prozorZaKombinacije.firstChild);
-    }*/
+    
     ocistiPoljaZaBrojeve();
 
     kvota=1;
@@ -246,7 +243,7 @@ function napraviDivZaIzvuceneBrojeve(){
     pom[0].appendChild(div);
 }
 
-function funkcija3(){
+function padajuciMeni(){
     const dugme = document.getElementsByClassName("dugme-meni")[0]
     const linkovi = document.getElementsByClassName("linkovi-zaglavlje")[0]
 
@@ -256,5 +253,5 @@ function funkcija3(){
 }
 
 window.onload=podesiKredit();
-window.onload=funkcija2();
-window.onload=funkcija3();
+window.onload=podesavanjeImena();
+window.onload=padajuciMeni();
